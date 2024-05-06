@@ -7,7 +7,7 @@
 </script>
 
 <style lang="scss">
-@import "../assets/main.scss";
+@import "../assets/scss/main.scss";
 
 body {
   display: grid;

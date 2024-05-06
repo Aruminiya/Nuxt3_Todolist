@@ -13,7 +13,7 @@
             <input class="MetaWall_input my-1" type="text" placeholder="暱稱">
             <input class="MetaWall_input my-1" type="email" placeholder="Email">
             <input class="MetaWall_input my-1" type="password" placeholder="Password">
-            <button class="btn MetaWall_button btnShdow mt-2" type="button">註冊</button>
+            <button class="btn MetaWall_button py-1" type="button">註冊</button>
             <nuxt-link class="routerLink" to="/">
                 回到首頁
             </nuxt-link>
@@ -31,7 +31,7 @@
   </script>
   
   <style lang="scss" scoped>
-  @import "../assets/main.scss";
+  @import "../assets/scss/main.scss";
   
   main{
     width: 100vw;
@@ -39,7 +39,6 @@
   }
   
   section{
-    box-shadow: -8px 8px 0px $MataWall_black;
     opacity: 1;
     position: relative;
     min-height: 450px;

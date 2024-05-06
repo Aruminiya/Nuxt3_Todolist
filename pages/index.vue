@@ -10,7 +10,7 @@
         <h5 class="text-center">到原宇宙展開全新社交圈</h5>
         <br>
         <nuxt-link class="routerLink" to="login">
-          <button class="btn MetaWall_button btnShdow mt-2 w-full" type="button">登入帳號</button>
+          <button class="btn MetaWall_button py-1 w-full" type="button">登入帳號</button>
         </nuxt-link>
           
         <nuxt-link class="routerLink" to="signup">
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/main.scss";
+@import "../assets/scss/main.scss";
 
 main{
   width: 100vw;
@@ -37,7 +37,6 @@ main{
 }
 
 section{
-  box-shadow: -8px 8px 0px $MataWall_black;
   opacity: 1;
   position: relative;
   min-height: 450px;
