@@ -36,7 +36,7 @@
                                 <div class="flex-1">
                                     <input :id="todo.id" class="checkBox mx-2" type="checkbox" name="todo" v-model="todo.isChecked">
                                     <label :for="todo.id">{{todo.content}}</label>
-                                </div>                               
+                                </div>
                             </div>
                             <hr />
                         </div>
