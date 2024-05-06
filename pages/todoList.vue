@@ -27,18 +27,20 @@
                     </div>
                     <!-- 待辦事項區塊 -->
                     <div class="todos">
-                        <div class="todo flex flex-row-reverse w-full text-xl p-5">
-                            <div class="flex-none">
-                                <button class="mx-2">編輯</button>
-                                <button class="mx-2">刪除</button>
+                        <div v-for="todo in todos" :key="todo.id">
+                                <div class="todo flex flex-row-reverse w-full text-xl p-5">
+                                <div class="flex-none">
+                                    <button class="mx-2">編輯</button>
+                                    <button class="mx-2">刪除</button>
+                                </div>
+                                <div class="flex-1">
+                                    <input :id="todo.id" class="checkBox mx-2" type="checkbox" name="todo" v-model="todo.isChecked">
+                                    <label :for="todo.id">{{todo.content}}</label>
+                                </div>                               
                             </div>
-                            <div class="flex-1">
-                                <input id="todo" class="checkBox mx-2" type="checkbox" name="todo">
-                                <label for="todo">購買晚餐食材</label>
-                            </div>
-                            
+                            <hr />
                         </div>
-                        <hr />
+
                     </div>
                 </div>
             </section>
@@ -52,7 +54,24 @@
 export default {
     data(){
         return{
-            listMode:0
+            listMode:0,
+            todos:[
+                {
+                    id:12345213,
+                    content:"購買晚餐食材",
+                    isChecked: false
+                },
+                {
+                    id:4562315731,
+                    content:"回家準備考試複習",
+                    isChecked: false
+                },
+                {
+                    id:54468451,
+                    content:"出門運動",
+                    isChecked: false
+                },
+            ]
         }
     }
 };
