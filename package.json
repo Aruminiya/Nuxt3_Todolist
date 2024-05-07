@@ -10,9 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "bcryptjs": "^2.4.3",
     "mongoose": "^8.3.4",
     "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
+    "sweetalert2": "^11.10.8",
     "uuid": "^9.0.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"

@@ -72,6 +72,7 @@ export default defineEventHandler(async (event) => {
     if(reqBody && Object.keys(reqQuery).length){
       const editTodoIndex = todos.findIndex(e=>e.id === reqQuery.id);
       todos[editTodoIndex].content = reqBody.content
+      if(reqBody.isChecked !== undefined){todos[editTodoIndex].isChecked = reqBody.isChecked}
       return todos[editTodoIndex]
     }else{
       return errorHandler(400,"沒有輸入 Body 或 Query 資料");
