@@ -40,7 +40,6 @@
                             </div>
                             <hr />
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -73,6 +72,9 @@ export default {
                 },
             ]
         }
+    },
+    mounted(){
+        
     }
 };
 </script>

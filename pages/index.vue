@@ -9,12 +9,20 @@
         <h1 class="logo text-center">MetaWall</h1>
         <h5 class="text-center">到原宇宙展開全新社交圈</h5>
         <br>
-        <nuxt-link class="routerLink" to="login">
+        <!-- <nuxt-link class="routerLink" to="login">
           <button class="btn MetaWall_button py-1 w-full" type="button">登入帳號</button>
         </nuxt-link>
           
         <nuxt-link class="routerLink" to="signup">
           註冊帳號
+        </nuxt-link> -->
+        
+        <nuxt-link class="routerLink" to="todoList">
+          <button class="btn MetaWall_button py-1 w-full" type="button">開始記錄我的待辦事項！</button>
+        </nuxt-link>
+          
+        <nuxt-link class="routerLink" to="about">
+          關於我們
         </nuxt-link>
       </div>
     </section>
