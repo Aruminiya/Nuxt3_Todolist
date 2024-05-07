@@ -13,7 +13,8 @@ export default defineStore('TodosStore', {
   actions: {
     // 得到 todos 資訊
     async getTodos () {
-      const todos = await $fetch('/api/todos', {
+      const host = '/api/todos';
+      const todos = await $fetch(host, {
         method: 'GET',
       });
       this.todos = todos
@@ -21,7 +22,8 @@ export default defineStore('TodosStore', {
 
     // 新增 todo 資訊
     async postTodos (body) {
-      await $fetch('/api/todos', {
+      const host ='/api/todos';
+      await $fetch(host, {
         method: 'POST',
         body
       });
@@ -30,9 +32,19 @@ export default defineStore('TodosStore', {
 
     // 編輯 todo 資訊
     async editTodos (body,qurey) {
-      await $fetch(`/api/todos?id=${qurey}`, {
+      const host =`/api/todos?id=${qurey}`;
+      await $fetch(host, {
         method: 'PATCH',
         body
+      });
+      this.getTodos()
+    },
+
+    // 刪除 todo 資訊
+    async deleteTodos (qurey) {
+      const host = qurey?`/api/todos?id=${qurey}`:'/api/todos';
+      await $fetch(host, {
+        method: 'DELETE',
       });
       this.getTodos()
     }

@@ -6,8 +6,8 @@
         title="loginView_Picture" width="300">
       </div>
       <div class="loginForm p-3">
-        <h1 class="logo text-center">MetaWall</h1>
-        <h5 class="text-center">到原宇宙展開全新社交圈</h5>
+        <h1 class="logo text-center">MyTodolist</h1>
+        <h5 class="text-center">開始保存您的待辦事項！</h5>
         <br>
         <!-- <nuxt-link class="routerLink" to="login">
           <button class="btn MetaWall_button py-1 w-full" type="button">登入帳號</button>
@@ -18,12 +18,9 @@
         </nuxt-link> -->
         
         <nuxt-link class="routerLink" to="todoList">
-          <button class="btn MetaWall_button py-1 w-full" type="button">開始記錄我的待辦事項！</button>
+          <button class="btn MetaWall_button py-1 w-full" type="button">前往我的待辦事項</button>
         </nuxt-link>
-          
-        <nuxt-link class="routerLink" to="about">
-          關於我們
-        </nuxt-link>
+        <p class="text-center">聯絡我們：02-29568874</p>
       </div>
     </section>
   </main>
